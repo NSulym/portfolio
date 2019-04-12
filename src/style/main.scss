@@ -1,0 +1,19 @@
+@import "colors";
+@import "menu";
+@import "portfolio";
+@import "hover";
+@import "list";
+@import "footer";
+
+
+
+
+body{
+  background: $white;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.hide-container{
+  display: none;
+}
