@@ -153,7 +153,7 @@
 </div>
 
 
-<div class="container my-list">
+<div class="container my-list hide-containert">
     <div class="row">
         <div class="col-md-5 con-left">
             <div class="block-position">
@@ -241,8 +241,8 @@
 <script>
     $(document).ready(function () {
         $(".nav-menu-portfolio").click(function () {
-            $(".my-list").css("display","none");
-            $(".portfolio").css("display","flex");
+            $(".my-list").addClass("hide-container");
+            $(".portfolio").removeClass("hide-container");
 
             $(this).addClass("active-background");
             $(".nav-menu-about").removeClass("active-background");
@@ -253,8 +253,9 @@
 <script>
     $(document).ready(function () {
         $(".nav-menu-about").click(function () {
-            $(".my-list").css("display","flex");
-            $(".portfolio").css("display","none");
+            $(".my-list").removeClass("hide-container");
+            $(".portfolio").addClass("hide-container");
+
 
             $(this).addClass("active-background");
             $(".nav-menu-portfolio").removeClass("active-background");
